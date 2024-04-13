@@ -1,9 +1,9 @@
 from dagster import Definitions, load_assets_from_modules
 
-from . import assets
+from .assets import summary
 
-all_assets = load_assets_from_modules([assets])
+summary_assets = load_assets_from_modules([summary])
 
 defs = Definitions(
-    assets=all_assets,
+    assets=[*summary_assets],
 )
