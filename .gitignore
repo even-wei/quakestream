@@ -1,0 +1,6 @@
+# Data
+data/
+
+# Distribution / packaging
+build/
+*.egg-info/
