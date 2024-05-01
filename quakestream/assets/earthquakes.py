@@ -12,7 +12,7 @@ from dagster_duckdb import DuckDBResource
 )
 def cwa_tw_earthquakes_file(context):
     """
-      The raw earthquakes dataset in Parquet, converted from CSV, sourced from cwa.govb.tw
+      The raw earthquakes dataset in Parquet, converted from CSV, sourced from https://scweb.cwa.gov.tw/zh-tw/earthquake/data/.
     """
 
     partition_date_str = context.asset_partition_key_for_output()
